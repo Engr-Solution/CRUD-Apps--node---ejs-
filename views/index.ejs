@@ -1,0 +1,40 @@
+<!-- Header -->
+<%- include('_header') %>
+
+<!-- Header -->
+<header
+  class="header bg-success w-100 d-flex justify-content-center align-items-center py-3 mb-5"
+>
+  <nav class="text-light text-uppercase fs-2 fw-bolder">
+    User Management System
+  </nav>
+</header>
+
+<!-- Table -->
+<main>
+  <div class="container">
+    <!-- New User Btn -->
+    <a href="/add_user" class="btn btn-success mb-3"
+      >New User <i class="bi bi-person-fill fs-5 m-1"></i
+    ></a>
+    <table class="table table-hover">
+      <thead class="bg-dark text-light">
+        <tr>
+          <th scope="col">#ID</th>
+          <th scope="col">NAME</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">GENDER</th>
+          <th scope="col">STATUS</th>
+          <th scope="col">ACTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data -->
+        <%- include('_data') %>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<!-- Footer -->
+<%- include('_footer') %>
